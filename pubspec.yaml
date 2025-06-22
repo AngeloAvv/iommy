@@ -1,0 +1,52 @@
+name: iommy
+description: An app to list devices in IOMMU Groups, useful for setting up VFIO when doing passthrough with KVM/QEMU.
+publish_to: 'none'
+version: 1.0.0+1
+repository: https://github.com/AngeloAvv/iommy
+issue_tracker: https://github.com/AngeloAvv/iommy/issues
+homepage: https://www.angelocassano.it
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  auto_route: ^10.0.0
+  collection: ^1.19.1
+  dart_mapper: ^0.8.0
+  flutter_bloc: ^9.0.0
+  flutter_essentials_kit: ^2.5.0
+  font_awesome_flutter: ^10.8.0
+  freezed_annotation: ^3.0.0
+  intl: any
+  json_annotation: ^4.8.1
+  path: ^1.9.1
+  path_provider: ^2.1.2
+  pine: ^1.0.3
+  provider: ^6.1.2
+  settings_ui: ^2.0.2
+  shared_preferences: ^2.5.3
+  talker: ^4.6.13
+  talker_bloc_logger: ^4.9.1
+  reactive_forms: ^18.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  auto_route_generator: ^10.0.0
+  bloc_test: ^10.0.0
+  build_runner: ^2.4.9
+  data_fixture_dart: ^3.0.0
+  flutter_lints: ^5.0.0
+  freezed: ^3.0.0
+  json_serializable: ^6.7.1
+  mockito: ^5.4.4
+  mocktail: ^1.0.3
+  dart_mapper_generator: ^0.8.0
+
+flutter:
+  generate: true
+  uses-material-design: true

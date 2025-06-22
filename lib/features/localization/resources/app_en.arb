@@ -1,0 +1,68 @@
+{
+  "appName": "Scaffold",
+
+  "actionCollapseAll": "Collapse All",
+  "actionExpandAll": "Expand All",
+  "actionSettings": "Settings",
+  "actionRetry": "Retry",
+
+  "errorGeneric": "Something went wrong!",
+
+  "labelIdentifier": "Identifier",
+  "labelVendorIdentifier": "Vendor Identifier",
+  "labelNetworkInterface": "Network Interface",
+  "labelMacAddress": "MAC Address",
+  "labelDeviceName" : "Device Name",
+  "labelDeviceModel": "Device Model",
+  "labelDeviceVendor": "Device Vendor",
+  "labelDeviceSerialNumber": "Device Serial Number",
+  "labelDevices": "{count, plural, =0 {No devices} one {1 device} other {{count} devices}}",
+  "@labelDevices": {
+    "description": "Label for the number of devices",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5",
+        "description": "Number of devices"
+      }
+    }
+  },
+  "labelGroup": "Group {id}",
+  "@labelGroup": {
+    "description": "Label for a group of devices",
+    "placeholders": {
+      "id": {
+        "type": "String",
+        "example": "1",
+        "description": "Group ID"
+      }
+    }
+  },
+  "labelNetwork": "Network",
+  "labelNetworkDevice": "Network Device",
+  "labelNvme": "NVMe",
+  "labelNvmeDevice": "NVMe Device",
+  "labelPci": "PCI",
+  "labelPciDevice": "PCI Device",
+  "labelSata": "SATA",
+  "labelSataDevice": "SATA Device",
+  "labelUsb": "USB",
+  "labelUsbDevice": "USB Device",
+  "labelPciClass" : "PCI Class",
+  "labelResetCapable": "Reset Capable",
+  "labelYes": "Yes",
+  "labelNo": "No",
+  "labelOops": "Oops!",
+  "labelEmptyGroups": "No groups found.",
+  "labelErrorGroups": "Error fetching groups. Please try again.",
+
+  "settingsApp": "App",
+  "settingsTheme": "Theme",
+  "settingsDarkMode": "Dark Mode",
+
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+
+  "titleSettings": "Settings"
+}
