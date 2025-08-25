@@ -29,7 +29,7 @@ dependencies:
   provider: ^6.1.2
   settings_ui: ^2.0.2
   shared_preferences: ^2.5.3
-  talker: ^4.6.13
+  talker: ^5.0.0
   talker_bloc_logger: ^4.9.1
   reactive_forms: ^18.0.1
 
