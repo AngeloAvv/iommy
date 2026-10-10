@@ -26,7 +26,7 @@ dependencies:
   path: ^1.9.1
   path_provider: ^2.1.2
   pine: ^1.0.3
-  provider: ^6.1.2
+  provider: ^6.1.5+1
   settings_ui: ^2.0.2
   shared_preferences: ^2.5.3
   talker: ^4.6.13
