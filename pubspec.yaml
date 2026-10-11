@@ -18,14 +18,14 @@ dependencies:
   collection: ^1.19.1
   dart_mapper: ^0.8.0
   flutter_bloc: ^9.1.1
-  flutter_essentials_kit: ^2.5.0
+  flutter_essentials_kit: ^2.9.1
   font_awesome_flutter: ^10.9.1
   freezed_annotation: ^3.0.0
   intl: any
   json_annotation: ^4.8.1
   path: ^1.9.1
   path_provider: ^2.1.2
-  pine: ^1.0.3
+  pine: ^1.0.4
   provider: ^6.1.5+1
   settings_ui: ^2.0.2
   shared_preferences: ^2.5.3
