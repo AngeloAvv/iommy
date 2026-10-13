@@ -30,7 +30,7 @@ jobs:
       - name: Tar artifacts
         run: tar -cvf ${{ inputs.platform }}-artifacts.tar -C ${{ inputs.platform == 'linux' && 'build/linux/x64/release/bundle/' || inputs.platform == 'windows' && 'build/windows/x64/runner/Release/' || inputs.platform == 'macos' && 'build/macos/Build/Products/Release/' }} .
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.platform }}-artifacts
           path: ${{ inputs.platform }}-artifacts.tar
