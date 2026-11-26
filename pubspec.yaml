@@ -14,13 +14,13 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  auto_route: ^11.1.0
+  auto_route: ^11.2.0
   collection: ^1.19.1
   dart_mapper: ^1.1.0
   flutter_bloc: ^9.1.1
   flutter_essentials_kit: ^2.9.1
   font_awesome_flutter: ^11.0.0
-  freezed_annotation: ^3.0.0
+  freezed_annotation: ^3.1.0
   intl: any
   json_annotation: ^4.8.1
   material_ui: ^1.11.1
