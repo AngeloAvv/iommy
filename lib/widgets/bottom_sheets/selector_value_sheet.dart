@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart' hide Route;
+import 'package:material_ui/material_ui.dart' hide Route;
 import 'package:flutter_essentials_kit/flutter_essentials_kit.dart';
 
 typedef OnSelectedValueChanged<T> = void Function(T? fuelType);

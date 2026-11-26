@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:iommy/features/theme/extensions/device_extension.dart';
 
 class LightTheme {
-  static ThemeData get make => ThemeData(
+  static get make => ThemeData(
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.blueGrey,
           accentColor: Colors.indigo,
@@ -35,7 +35,7 @@ class LightTheme {
 }
 
 class DarkTheme {
-  static ThemeData get make => ThemeData(
+  static get make => ThemeData(
         primaryColor: Colors.blueGrey,
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.blueGrey,

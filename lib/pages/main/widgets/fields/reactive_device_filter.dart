@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_essentials_kit/flutter_essentials_kit.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 
@@ -26,14 +26,7 @@ class ReactiveDeviceFilter extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       spacing: 4.0,
       children: [
-        ReactiveCheckbox(
-          visualDensity: const VisualDensity(
-            horizontal: -4,
-            vertical: -4,
-          ),
-          formControlName: formControlName,
-          // activeColor: Theme.of(context).primaryColor,
-        ),
+        _ReactiveCheckbox(formControlName: formControlName),
         Text(
           capability,
           style: Theme.of(context).textTheme.bodySmall,
@@ -41,4 +34,22 @@ class ReactiveDeviceFilter extends StatelessWidget {
       ],
     ),
   );
+}
+
+/// A [Checkbox] bound to a [FormControl].
+///
+/// reactive_forms' own `ReactiveCheckbox` is still built on
+/// `package:flutter/material.dart`, whose types are incompatible with
+/// `material_ui`, so the same binding is rebuilt here on top of
+/// [ReactiveFocusableFormField].
+class _ReactiveCheckbox extends ReactiveFocusableFormField<bool, bool> {
+  _ReactiveCheckbox({required String super.formControlName})
+    : super(
+        builder: (field) => Checkbox(
+          value: field.value ?? false,
+          visualDensity: const VisualDensity(horizontal: -4, vertical: -4),
+          focusNode: field.focusNode,
+          onChanged: field.control.enabled ? field.didChange : null,
+        ),
+      );
 }
