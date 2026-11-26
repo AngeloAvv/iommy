@@ -12,6 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   auto_route: ^11.1.0
   collection: ^1.19.1
   dart_mapper: ^1.1.0
@@ -47,9 +49,5 @@ dev_dependencies:
   dart_mapper_generator: ^1.1.0
 
 flutter:
-  # Localizations are generated with tool/gen_l10n.sh and committed instead of
-  # relying on `generate: true`: gen-l10n of Flutter 3.50 still emits the
-  # deprecated flutter_localizations delegates (fixed upstream in
-  # flutter/flutter#194500). Drop the script, restore l10n.yaml and set
-  # `generate: true` again once the project moves to a release shipping it.
+  generate: true
   uses-material-design: true

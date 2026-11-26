@@ -47,6 +47,7 @@ app.*.map.json
 /android/app/release
 
 # Generated sources
+**/app_localizations*.dart
 **/*.g.dart
 **/*.gr.dart
 **/*.freezed.dart

@@ -33,7 +33,8 @@ class _AppState extends State<App> {
               themeMode: mode,
               supportedLocales: AppLocalizations.supportedLocales,
               localizationsDelegates: const [
-                ...AppLocalizations.localizationsDelegates,
+                AppLocalizations.delegate,
+                ...GlobalMaterialLocalizations.delegates,
                 FlutterEssentialsKitLocalizations.delegate,
               ],
             );
