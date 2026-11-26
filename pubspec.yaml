@@ -12,22 +12,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
   auto_route: ^11.1.0
   collection: ^1.19.1
+  cupertino_ui: ^1.1.7
   dart_mapper: ^1.1.0
   flutter_bloc: ^9.1.1
   flutter_essentials_kit: ^2.9.1
-  font_awesome_flutter: ^10.9.1
+  font_awesome_flutter: ^11.0.0
   freezed_annotation: ^3.0.0
   intl: any
   json_annotation: ^4.8.1
+  material_ui: ^1.11.1
   path: ^1.9.1
   path_provider: ^2.1.2
   pine: ^1.0.4
   provider: ^6.1.5+1
-  settings_ui: ^2.0.2
+  settings_ui: ^4.0.2
   shared_preferences: ^2.5.3
   talker: ^4.9.3
   talker_bloc_logger: ^4.9.3
@@ -40,7 +40,7 @@ dev_dependencies:
   bloc_test: ^10.0.0
   build_runner: ^2.4.9
   data_fixture_dart: ^3.0.0
-  flutter_lints: ^6.0.0
+  flutter_lints: ^5.0.0
   freezed: ^4.0.1
   json_serializable: ^6.7.1
   mockito: ^5.4.4
@@ -48,5 +48,9 @@ dev_dependencies:
   dart_mapper_generator: ^1.1.0
 
 flutter:
-  generate: true
+  # Localizations are generated with tool/gen_l10n.sh and committed instead of
+  # relying on `generate: true`: gen-l10n of Flutter 3.50 still emits the
+  # deprecated flutter_localizations delegates (fixed upstream in
+  # flutter/flutter#194500). Drop the script, restore l10n.yaml and set
+  # `generate: true` again once the project moves to a release shipping it.
   uses-material-design: true
