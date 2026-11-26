@@ -14,9 +14,9 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  auto_route: ^10.0.0
+  auto_route: ^11.1.0
   collection: ^1.19.1
-  dart_mapper: ^0.8.0
+  dart_mapper: ^1.1.0
   flutter_bloc: ^9.1.1
   flutter_essentials_kit: ^2.9.1
   font_awesome_flutter: ^10.9.1
@@ -36,16 +36,16 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  auto_route_generator: ^10.0.0
+  auto_route_generator: ^10.5.0
   bloc_test: ^10.0.0
   build_runner: ^2.4.9
   data_fixture_dart: ^3.0.0
-  flutter_lints: ^5.0.0
-  freezed: ^3.0.0
+  flutter_lints: ^6.0.0
+  freezed: ^4.0.1
   json_serializable: ^6.7.1
   mockito: ^5.4.4
   mocktail: ^1.0.5
-  dart_mapper_generator: ^0.8.0
+  dart_mapper_generator: ^1.1.0
 
 flutter:
   generate: true
