@@ -14,9 +14,16 @@ analyzer:
     dead_code: error
     invalid_annotation_target: ignore
     prefer_single_quotes: warning
+    # Flutter 3.50 deprecates package:flutter/material.dart (and the
+    # Global*Localizations) in favour of material_ui/cupertino_ui. Migrating
+    # is blocked by third-party packages (e.g. settings_ui) still using the
+    # flutter/material types, so the deprecation is tolerated for now.
+    deprecated_member_use: ignore
   exclude:
     - "**/*.barrel.dart"
     - "**/*.g.dart"
     - "**/*.gr.dart"
     - "**/*.freezed.dart"
     - "**/*.mocks.dart"
+    - build/**
+    - linux/**
