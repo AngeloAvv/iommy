@@ -1,6 +1,6 @@
 import 'package:iommy/repositories/repository.dart';
 import 'package:iommy/services/configuration_service.dart';
-import 'package:flutter/material.dart' hide Route;
+import 'package:material_ui/material_ui.dart' hide Route;
 
 /// Abstract class of ConfigurationRepository
 abstract interface class ConfigurationRepository {

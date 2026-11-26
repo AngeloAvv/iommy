@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iommy/features/localization/extensions/build_context.dart';
 import 'package:iommy/features/theme/extensions/device_extension.dart';

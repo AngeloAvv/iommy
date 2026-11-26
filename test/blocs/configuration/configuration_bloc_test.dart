@@ -3,7 +3,7 @@ import 'package:iommy/errors/repository_error.dart';
 import 'package:iommy/repositories/configuration_repository.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:data_fixture_dart/data_fixture_dart.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:iommy/blocs/configuration/configuration_bloc.dart';
 import 'package:mockito/annotations.dart';

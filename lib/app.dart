@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_essentials_kit/localizations/flutter_essentials_kit_localizations.dart';
 import 'package:iommy/di/dependency_injector.dart';
 import 'package:iommy/features/localization/app_localizations.dart';
@@ -33,7 +33,8 @@ class _AppState extends State<App> {
               themeMode: mode,
               supportedLocales: AppLocalizations.supportedLocales,
               localizationsDelegates: const [
-                ...AppLocalizations.localizationsDelegates,
+                AppLocalizations.delegate,
+                ...GlobalMaterialLocalizations.delegates,
                 FlutterEssentialsKitLocalizations.delegate,
               ],
             );

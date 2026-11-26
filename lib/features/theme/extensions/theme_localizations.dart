@@ -1,5 +1,5 @@
 import 'package:iommy/features/localization/extensions/build_context.dart';
-import 'package:flutter/material.dart' hide Route;
+import 'package:material_ui/material_ui.dart' hide Route;
 
 extension ThemeLocalizations on ThemeMode {
   String? localizedString(BuildContext context) {
