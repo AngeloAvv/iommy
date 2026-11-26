@@ -14,7 +14,6 @@ dependencies:
     sdk: flutter
   auto_route: ^11.1.0
   collection: ^1.19.1
-  cupertino_ui: ^1.1.7
   dart_mapper: ^1.1.0
   flutter_bloc: ^9.1.1
   flutter_essentials_kit: ^2.9.1
